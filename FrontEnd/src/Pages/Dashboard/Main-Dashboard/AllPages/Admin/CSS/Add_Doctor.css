@@ -1,0 +1,132 @@
+.Main_Add_Doctor_div {
+  margin: auto;
+  margin-top: 2rem;
+  padding: 3rem;
+  border-radius: 10px;
+  width: 95%;
+  box-shadow: 0px 1px 11px 2px #0000001f;
+  background-color: white;
+}
+
+.Main_Add_Doctor_div h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.Main_Add_Doctor_div img {
+  width: 10%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 6rem;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 5px;
+  align-items: center;
+}
+
+form input,
+select,
+textarea {
+  width: 100%;
+  background-color: rgba(178, 219, 250, 0.874);
+  height: 3rem;
+  font-size: 1.2rem;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+.inputdiv {
+  display: flex;
+  justify-content: left;
+  width: 60%;
+}
+
+.formsubmitbutton {
+  text-align: center;
+  width: 15%;
+  height: 2.8rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  background: #ffb195;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.formsubmitbutton:hover {
+  background: #f98e67;
+}
+
+.inputdiv span div {
+  display: block;
+}
+
+.mainAmbupance {
+  background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Main_Add_Doctor_div img {
+    width: 30%;
+  }
+  .formsubmitbutton {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .Main_Add_Doctor_div img {
+    width: 30%;
+  }
+  form div {
+    display: block;
+  }
+  .inputdiv {
+    width: 100%;
+  }
+  .Main_Add_Doctor_div {
+    padding: 1rem;
+  }
+  .adressdiv {
+    display: block;
+  }
+  .formsubmitbutton {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Main_Add_Doctor_div h1 {
+    font-size: 1.7rem;
+  }
+  .Main_Add_Doctor_div {
+    width: 100%;
+  }
+  .formsubmitbutton {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .formsubmitbutton {
+    width: 70%;
+  }
+}

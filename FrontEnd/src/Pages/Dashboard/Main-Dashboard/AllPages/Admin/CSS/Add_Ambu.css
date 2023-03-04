@@ -1,0 +1,106 @@
+.mainAmbupance {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 1px 11px 2px #0000001f;
+}
+
+.mainAmbupance h1 {
+  font-size: 2.5rem;
+}
+
+.imagesection {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem 0rem;
+}
+
+.imagesection img {
+  width: 20%;
+  cursor: pointer;
+  border: 1px solid;
+  height: 10rem;
+  padding: 13px;
+  border-radius: 10px;
+  background-color: #c3c7ff75;
+  border: none;
+  box-shadow: 0px 0px 7px -3px black;
+  transition: 0.3s;
+}
+
+.imagesection img:hover {
+  width: 22%;
+}
+
+.mainAmbupance h1 {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+/* ***************************************************************** */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd92;
+}
+
+/* ***************************************************************** */
+
+@media only screen and (max-width: 1024px) {
+  .imagesection img {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .imagesection {
+    width: 100%;
+    display: inline-block;
+    gap: 10px;
+  }
+
+  .imagesection img {
+    width: 30%;
+    height: 6rem;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .mainAmbupance > h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainAmbupance > h1 {
+    font-size: 1.7rem;
+  }
+  .imagesection {
+    width: 100%;
+    display: block;
+    gap: 10px;
+  }
+
+  .imagesection img {
+    display: block;
+    width: 60%;
+    height: 6rem;
+    margin-bottom: 1rem;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}

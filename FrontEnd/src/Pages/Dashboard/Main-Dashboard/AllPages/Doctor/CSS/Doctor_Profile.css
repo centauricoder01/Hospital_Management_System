@@ -1,0 +1,102 @@
+.firstBox {
+  background-color: white;
+  border-radius: 2rem;
+  width: 40%;
+}
+
+.maindoctorProfile {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.singleitemdiv {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  padding: 10px;
+  font-size: 1.3rem;
+  /* border: 1px solid red; */
+  align-items: center;
+  margin: 0rem 1rem;
+}
+
+.singleitemdiv:nth-child(even) .singledivicons {
+  color: #ff6f6f;
+}
+
+.singleitemdiv:nth-child(odd) .singledivicons {
+  color: rgb(123 219 130);
+}
+
+.firstBox div {
+  display: flex;
+  padding: 1rem;
+}
+.firstBox div img {
+  width: 50%;
+  margin: auto;
+  border-radius: 10rem;
+  background-color: #efefef;
+}
+
+.subfirstbox {
+  background-color: white;
+  border-radius: 2rem;
+  height: 45%;
+}
+.subSecondBox {
+  background-color: white;
+  border-radius: 2rem;
+  height: 45%;
+}
+
+.singleitemdiv button {
+  width: 50%;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  box-shadow: 0px 0px 3px -1px #4f33ea;
+  background-color: #84adea;
+  text-align: center;
+}
+
+.SecondBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  .maindoctorProfile {
+    display: block;
+  }
+  .firstBox {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .SecondBox {
+    gap: 3rem;
+  }
+  .firstBox div img {
+    width: 40%;
+    margin: auto;
+    border-radius: 10rem;
+    background-color: #efefef;
+  }
+  .singleitemdiv button {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .singleitemdiv button {
+    width: 70%;
+  }
+}

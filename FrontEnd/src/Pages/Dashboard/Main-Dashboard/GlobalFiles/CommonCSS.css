@@ -1,0 +1,233 @@
+/* *********************************  TOP BAR STYLE PART  ****************************************/
+
+.MainDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 10px 40px;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px -3px rgb(101, 101, 101);
+}
+
+.IconsDiv {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchDiv {
+  width: 60%;
+}
+
+.Icons {
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(74, 70, 70);
+}
+
+.SearchDiv input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  padding-left: 10px;
+  background-color: rgb(253 176 149);
+}
+
+.Hideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Hideshowicon {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* **********************   SIDEBAR STYLE PART  ************************* */
+.container {
+  display: flex;
+  gap: 2rem;
+  background-color: rgba(131, 220, 255, 0.29);
+  width: 100%;
+  /* border: 2px solid green; */
+  width: 100%;
+}
+main {
+  width: 100%;
+  padding: 20px;
+}
+
+.mainIcon {
+  color: white;
+  font-size: 2rem;
+}
+
+.sidebar {
+  background: rgba(255, 166, 134, 0.874);
+  color: #fff;
+  height: 100vh;
+  transition: all 0.5s;
+  position: sticky;
+  top: 0;
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 30px;
+}
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  transition: all 0.5s;
+}
+.link:hover {
+  background: rgba(253, 147, 108, 0.874);
+  color: #000;
+  transition: all 0.5s;
+}
+.active {
+  background: rgba(253, 147, 108, 0.874);
+  color: #000;
+}
+.icon,
+.link_text {
+  font-size: 15px;
+}
+
+.LogOutPath .icon {
+  font-size: 2rem;
+}
+
+.AfterSideBar {
+  width: 90%;
+  margin: 2rem;
+}
+
+/**************************************** FRONT PAGE STYLE  *****************************************/
+
+.maindiv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.commondiv {
+  border: 2px solid;
+  height: 8rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.patientDetails {
+  margin-top: 5rem;
+}
+.patientDetails h1 {
+  margin-bottom: 1rem;
+  color: rgb(184 191 234);
+}
+
+.patientBox {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0px 0px 36px -3px #00000026;
+}
+
+.commondiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  box-shadow: 0px 0px 36px -3px #00000026;
+  border: none;
+  background-color: white;
+}
+
+.overviewIcon {
+  font-size: 4rem;
+  color: rgb(184 191 234);
+}
+
+/* ******************************************************** */
+
+@media only screen and (max-width: 1200px) {
+  .maindiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .commondiv {
+    gap: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .maindiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .commondiv {
+    gap: 4rem;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .maindiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hidesidebar {
+    display: none;
+  }
+  .showsidebar {
+    display: block;
+  }
+  .Icons {
+    font-size: 1.3rem;
+  }
+  .IconsDiv {
+    gap: 15px;
+    border: 1px solid;
+  }
+  .MainDiv {
+    border: 1px solid;
+  }
+}
